@@ -1,0 +1,91 @@
+
+:root{--bg:#07080f;--bg2:#0f1220;--kartu:#141829;--cyan:#00e5ff;--ungu:#a855f7;--biru:#2f6bff;--teks:#e8ecf8;--redup:#8e97b5}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--teks);line-height:1.65}
+a{color:var(--cyan)}
+.rafi_fauzan_ramadhan_wadah{width:min(1120px,92%);margin:auto}
+#rafi_fauzan_ramadhan_header{position:sticky;top:0;z-index:50;background:#07080fee;border-bottom:1px solid #00e5ff44;backdrop-filter:blur(8px)}
+.rafi_fauzan_ramadhan_bar{display:flex;justify-content:space-between;align-items:center;padding:12px 0}
+.rafi_fauzan_ramadhan_logo{font-weight:800;letter-spacing:2px;text-decoration:none;color:#fff;font-size:1.2rem}
+.rafi_fauzan_ramadhan_logo span{color:var(--cyan);text-shadow:0 0 10px var(--cyan)}
+#rafi_fauzan_ramadhan_menu_nav{display:flex;gap:4px;list-style:none}
+#rafi_fauzan_ramadhan_menu_nav a{color:var(--redup);text-decoration:none;padding:8px 12px;border-radius:6px;font-size:.9rem;text-transform:uppercase;letter-spacing:1px}
+#rafi_fauzan_ramadhan_menu_nav a:hover,#rafi_fauzan_ramadhan_menu_nav a.rafi_fauzan_ramadhan_aktif{color:var(--cyan);background:#00e5ff15;box-shadow:inset 0 -2px var(--cyan)}
+#rafi_fauzan_ramadhan_tombol_menu{display:none;background:none;border:1px solid var(--cyan);color:var(--cyan);font-size:1.6rem;padding:0 10px;border-radius:6px;cursor:pointer}
+.rafi_fauzan_ramadhan_hero{padding:110px 0 90px;text-align:center;background:radial-gradient(circle at 50% 0,#a855f733,transparent 60%),linear-gradient(#00e5ff12 1px,transparent 1px) 0 0/48px 48px,linear-gradient(90deg,#00e5ff12 1px,transparent 1px) 0 0/48px 48px}
+.rafi_fauzan_ramadhan_label{display:inline-block;border:1px solid var(--cyan);color:var(--cyan);padding:4px 16px;border-radius:30px;font-size:.8rem;letter-spacing:3px}
+.rafi_fauzan_ramadhan_hero h1{font-size:clamp(2.4rem,8vw,5.4rem);line-height:1.05;margin:20px 0;font-weight:900;text-transform:uppercase}
+.rafi_fauzan_ramadhan_neon{background:linear-gradient(90deg,var(--cyan),var(--ungu),var(--cyan));background-size:200%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:rafi_fauzan_ramadhan_geser 4s linear infinite}
+@keyframes rafi_fauzan_ramadhan_geser{to{background-position:200%}}
+.rafi_fauzan_ramadhan_hero p{max-width:640px;margin:0 auto 28px;color:var(--redup)}
+.rafi_fauzan_ramadhan_tombol{display:inline-block;padding:12px 28px;margin:5px;border-radius:6px;text-decoration:none;font-weight:700;letter-spacing:1px;text-transform:uppercase;border:0;cursor:pointer;font-size:.95rem;color:#07080f;background:linear-gradient(90deg,var(--cyan),var(--biru));box-shadow:0 0 18px #00e5ff66}
+.rafi_fauzan_ramadhan_tombol:hover{transform:translateY(-2px);box-shadow:0 0 28px #00e5ffaa}
+.rafi_fauzan_ramadhan_tombol_garis{background:none;color:var(--ungu);border:2px solid var(--ungu);box-shadow:0 0 14px #a855f755}
+.rafi_fauzan_ramadhan_judul_halaman{padding:60px 0 40px;text-align:center;border-bottom:1px solid #ffffff10;background:radial-gradient(circle at 50% 0,#2f6bff33,transparent 65%)}
+.rafi_fauzan_ramadhan_judul_halaman h1{font-size:clamp(1.8rem,5vw,3rem);text-transform:uppercase}
+.rafi_fauzan_ramadhan_judul_halaman p{color:var(--redup)}
+.rafi_fauzan_ramadhan_seksi{padding:54px 0}.rafi_fauzan_ramadhan_seksi h2{font-size:1.7rem;margin-bottom:20px;text-transform:uppercase;letter-spacing:1px}
+.rafi_fauzan_ramadhan_seksi h2::before{content:'// ';color:var(--cyan)}
+.rafi_fauzan_ramadhan_grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.rafi_fauzan_ramadhan_kartu{background:var(--kartu);border:1px solid #00e5ff44;border-radius:12px;padding:22px;box-shadow:0 0 18px #00e5ff14;transition:.25s}
+.rafi_fauzan_ramadhan_kartu:hover{border-color:var(--cyan);box-shadow:0 0 24px #00e5ff55;transform:translateY(-4px)}
+.rafi_fauzan_ramadhan_kartu h3{margin-bottom:6px}.rafi_fauzan_ramadhan_ikon{font-size:2rem;color:var(--cyan)}
+.rafi_fauzan_ramadhan_ungu{border-color:#a855f766}.rafi_fauzan_ramadhan_ungu:hover{border-color:var(--ungu);box-shadow:0 0 24px #a855f755}
+.rafi_fauzan_ramadhan_badge{display:inline-block;font-size:.72rem;font-weight:700;padding:2px 10px;border-radius:20px;background:#a855f733;color:#d8b4fe;border:1px solid var(--ungu);margin:2px 2px 6px 0;text-transform:uppercase}
+.rafi_fauzan_ramadhan_badge_cyan{background:#00e5ff22;color:var(--cyan);border-color:var(--cyan)}
+.rafi_fauzan_ramadhan_angka{font-size:2.4rem;font-weight:900}
+.rafi_fauzan_ramadhan_prize{text-align:center;padding:34px;border-radius:14px;background:linear-gradient(135deg,#2f6bff33,#a855f733);border:1px solid var(--cyan);box-shadow:0 0 30px #00e5ff44}
+.rafi_fauzan_ramadhan_prize .rafi_fauzan_ramadhan_angka{font-size:clamp(2.4rem,8vw,4.4rem)}
+.rafi_fauzan_ramadhan_garis{list-style:none;border-left:2px solid var(--cyan);padding-left:22px}
+.rafi_fauzan_ramadhan_garis li{position:relative;margin-bottom:18px}
+.rafi_fauzan_ramadhan_garis li::before{content:'';position:absolute;left:-30px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:2px solid var(--cyan);box-shadow:0 0 8px var(--cyan)}
+.rafi_fauzan_ramadhan_garis b{color:var(--cyan)}
+.rafi_fauzan_ramadhan_scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;margin:12px 0;background:var(--kartu);min-width:520px}
+th,td{padding:11px 14px;border:1px solid #ffffff15;text-align:left}
+th{background:#00e5ff1f;color:var(--cyan);text-transform:uppercase;font-size:.85rem;letter-spacing:1px}
+tr:hover td{background:#ffffff08}
+.rafi_fauzan_ramadhan_emas{color:#ffd54a}.rafi_fauzan_ramadhan_perak{color:#cfd8e6}.rafi_fauzan_ramadhan_perunggu{color:#e0904f}
+.rafi_fauzan_ramadhan_podium{text-align:center}.rafi_fauzan_ramadhan_podium .rafi_fauzan_ramadhan_angka{font-size:1.7rem}
+.rafi_fauzan_ramadhan_tab_bar,.rafi_fauzan_ramadhan_filter{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.rafi_fauzan_ramadhan_tab_bar button,.rafi_fauzan_ramadhan_filter button{background:var(--kartu);color:var(--redup);border:1px solid #ffffff25;padding:10px 20px;border-radius:6px;cursor:pointer;font-weight:600;font-size:.9rem}
+.rafi_fauzan_ramadhan_tab_bar button.rafi_fauzan_ramadhan_aktif,.rafi_fauzan_ramadhan_filter button.rafi_fauzan_ramadhan_aktif,.rafi_fauzan_ramadhan_tab_bar button:hover,.rafi_fauzan_ramadhan_filter button:hover{color:#07080f;background:var(--cyan);border-color:var(--cyan);box-shadow:0 0 14px #00e5ff77}
+.rafi_fauzan_ramadhan_panel{display:none}.rafi_fauzan_ramadhan_panel.rafi_fauzan_ramadhan_aktif{display:block;animation:rafi_fauzan_ramadhan_muncul .35s}
+@keyframes rafi_fauzan_ramadhan_muncul{from{opacity:0;transform:translateY(8px)}}
+.rafi_fauzan_ramadhan_aturan{background:var(--kartu);border:1px solid #ffffff20;border-radius:10px;margin-bottom:10px;overflow:hidden}
+.rafi_fauzan_ramadhan_aturan_judul{width:100%;text-align:left;background:none;border:0;color:var(--teks);padding:16px 18px;font-size:1rem;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;gap:10px}
+.rafi_fauzan_ramadhan_aturan_judul::after{content:'+';color:var(--cyan);font-size:1.3rem}
+.rafi_fauzan_ramadhan_aturan.rafi_fauzan_ramadhan_buka{border-color:var(--cyan)}.rafi_fauzan_ramadhan_aturan.rafi_fauzan_ramadhan_buka .rafi_fauzan_ramadhan_aturan_judul::after{content:'−'}
+.rafi_fauzan_ramadhan_aturan_isi{display:none;padding:0 18px 16px;color:var(--redup)}.rafi_fauzan_ramadhan_aturan.rafi_fauzan_ramadhan_buka .rafi_fauzan_ramadhan_aturan_isi{display:block}
+.rafi_fauzan_ramadhan_aturan_isi li{margin-left:20px}
+.rafi_fauzan_ramadhan_sembunyi{display:none!important}
+.rafi_fauzan_ramadhan_dua{display:grid;grid-template-columns:1.4fr 1fr;gap:28px;align-items:start}
+.rafi_fauzan_ramadhan_form .rafi_fauzan_ramadhan_baris{display:flex;flex-direction:column;margin-bottom:14px}
+.rafi_fauzan_ramadhan_form label{font-weight:600;margin-bottom:4px;font-size:.9rem}
+.rafi_fauzan_ramadhan_form input,.rafi_fauzan_ramadhan_form select,.rafi_fauzan_ramadhan_form textarea{background:#0b0e1a;color:var(--teks);border:1px solid #ffffff30;border-radius:8px;padding:10px;font:inherit}
+.rafi_fauzan_ramadhan_form input:focus,.rafi_fauzan_ramadhan_form select:focus,.rafi_fauzan_ramadhan_form textarea:focus{outline:0;border-color:var(--cyan);box-shadow:0 0 10px #00e5ff55}
+.rafi_fauzan_ramadhan_galat{color:#ff5c7a;font-size:.82rem;min-height:1em}
+.rafi_fauzan_ramadhan_info{color:var(--redup);font-size:.85rem}
+#rafi_fauzan_ramadhan_modal{position:fixed;inset:0;background:#000b;display:none;align-items:center;justify-content:center;z-index:100;padding:16px}
+#rafi_fauzan_ramadhan_modal.rafi_fauzan_ramadhan_buka{display:flex}
+.rafi_fauzan_ramadhan_modal_isi{background:var(--kartu);border:1px solid var(--cyan);box-shadow:0 0 40px #00e5ff66;border-radius:14px;padding:26px;width:min(520px,100%);max-height:90vh;overflow:auto}
+.rafi_fauzan_ramadhan_modal_isi h3{color:var(--cyan);margin-bottom:12px}
+.rafi_fauzan_ramadhan_modal_isi dt{color:var(--redup);font-size:.8rem;text-transform:uppercase;margin-top:8px}
+.rafi_fauzan_ramadhan_modal_isi dd{white-space:pre-line;word-break:break-word}
+#rafi_fauzan_ramadhan_footer{margin-top:40px;padding:36px 0 16px;border-top:1px solid #00e5ff44;background:var(--bg2)}
+.rafi_fauzan_ramadhan_foot_grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+#rafi_fauzan_ramadhan_footer a{display:block;color:var(--redup);text-decoration:none}#rafi_fauzan_ramadhan_footer a:hover{color:var(--cyan)}
+.rafi_fauzan_ramadhan_hak{text-align:center;font-size:.82rem;color:var(--redup);margin-top:20px;border-top:1px solid #ffffff15;padding-top:12px}
+@media(max-width:860px){
+#rafi_fauzan_ramadhan_tombol_menu{display:block}
+#rafi_fauzan_ramadhan_menu_nav{display:none;position:absolute;top:100%;left:0;right:0;background:#07080ffa;flex-direction:column;padding:10px 4%;border-bottom:1px solid var(--cyan)}
+#rafi_fauzan_ramadhan_menu_nav.rafi_fauzan_ramadhan_buka{display:flex}
+.rafi_fauzan_ramadhan_dua{grid-template-columns:1fr}}
+
+/* Background foto untuk kartu cabang game */
+.rafi_fauzan_ramadhan_bg_ml,.rafi_fauzan_ramadhan_bg_valorant,.rafi_fauzan_ramadhan_bg_pubg,.rafi_fauzan_ramadhan_bg_efootball{background-size:cover;background-position:center;background-repeat:no-repeat;position:relative;overflow:hidden}
+.rafi_fauzan_ramadhan_bg_ml{background-image:linear-gradient(180deg,rgba(14,18,32,.72),rgba(14,18,32,.90)),url('../img/mlbb.jpg')}
+.rafi_fauzan_ramadhan_bg_valorant{background-image:linear-gradient(180deg,rgba(14,18,32,.72),rgba(14,18,32,.90)),url('../img/valorant.jpg')}
+.rafi_fauzan_ramadhan_bg_pubg{background-image:linear-gradient(180deg,rgba(14,18,32,.72),rgba(14,18,32,.90)),url('../img/pubg.jpg')}
+.rafi_fauzan_ramadhan_bg_efootball{background-image:linear-gradient(180deg,rgba(14,18,32,.72),rgba(14,18,32,.90)),url('../img/efootball.jpg')}
+.rafi_fauzan_ramadhan_kartu table{background:rgba(14,18,32,.75);backdrop-filter:blur(4px)}
